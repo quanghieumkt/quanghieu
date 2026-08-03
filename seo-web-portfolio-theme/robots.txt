@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://username.github.io/seo-web-portfolio/sitemap.xml
