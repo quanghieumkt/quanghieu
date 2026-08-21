@@ -1,32 +1,26 @@
 [
   {
-    "title": "Visa Top Ten SEO Optimization",
-    "category": [
-      "seo",
-      "wordpress"
-    ],
-    "url": "projects/visatopten-seo.html"
+    "title": "9proxy.com — Xây dựng website proxy từ đầu",
+    "category": ["technical", "web"],
+    "result": "20.000+ traffic",
+    "url": "projects/9proxy-technical-seo.html"
   },
   {
-    "title": "Orbital Tech Audit",
-    "category": [
-      "seo"
-    ],
-    "url": "projects/orbitaltech-audit.html"
+    "title": "Tăng trưởng 2 website lên 50K+ traffic/tháng",
+    "category": ["offpage", "content"],
+    "result": "50.000+ traffic/tháng (Ahrefs)",
+    "url": "projects/ecomkey-growth.html"
   },
   {
-    "title": "Chimdep.net Content System",
-    "category": [
-      "seo",
-      "content"
-    ],
-    "url": "projects/chimdep-content.html"
+    "title": "Website tin tức — 10K traffic/tháng từ content",
+    "category": ["content"],
+    "result": "10.000+ traffic/tháng",
+    "url": "projects/news-content-strategy.html"
   },
   {
-    "title": "Elevator Service Website",
-    "category": [
-      "web"
-    ],
-    "url": "projects/elevator-landing-page.html"
+    "title": "Thiết kế theme website du lịch địa phương",
+    "category": ["web", "technical"],
+    "result": "2 website: phuyen.travel, vungtau.travel",
+    "url": "projects/travel-theme-development.html"
   }
 ]
