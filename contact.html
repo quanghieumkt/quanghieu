@@ -3,38 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="Liên hệ với Trương Quang Hiếu — SEO Specialist. Email, số điện thoại và form liên hệ, phản hồi trong vòng 24 giờ.">
-<meta property="og:title" content="Liên hệ | Trương Quang Hiếu">
-<meta property="og:description" content="Đang tìm cơ hội ở vị trí SEO Specialist / Technical SEO. Liên hệ qua email, điện thoại hoặc LinkedIn.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://quanghieumkt.github.io/quanghieu/contact.html">
-<link rel="canonical" href="https://quanghieumkt.github.io/quanghieu/contact.html">
+<meta name="description" content="Liên hệ với Trương Quang Hiếu — SEO Specialist. Email, số điện thoại và form liên hệ.">
 <title>Liên hệ | Trương Quang Hiếu</title>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="css/style.css">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ContactPage",
-  "name": "Liên hệ | Trương Quang Hiếu",
-  "url": "https://quanghieumkt.github.io/quanghieu/contact.html",
-  "about": {
-    "@type": "Person",
-    "name": "Trương Quang Hiếu",
-    "email": "mailto:quanghieumkt@gmail.com",
-    "telephone": "+84387911499"
-  }
-}
-</script>
 </head>
 <body>
 
 <header class="site-header">
   <div class="container nav">
     <a class="brand" href="index.html"><span class="brand-mark">TQH</span><span>Trương Quang Hiếu</span></a>
-    <button class="menu-toggle" aria-label="Mở menu" aria-expanded="false">☰</button>
+    <button class="menu-toggle" aria-label="Mở menu">☰</button>
     <nav class="nav-links">
       <a href="index.html">Trang chủ</a>
       <a href="about.html">Giới thiệu</a>
@@ -50,133 +31,60 @@
   <div class="container">
     <span class="eyebrow">Liên hệ</span>
     <h1>Cùng đưa website của bạn lên top.</h1>
-    <p>Đang tìm cơ hội ở vị trí SEO Specialist / Technical SEO. Để lại lời nhắn bên dưới hoặc liên hệ trực tiếp — mình phản hồi trong vòng 24 giờ.</p>
+    <p>Đang tìm cơ hội ở vị trí SEO Specialist / Technical SEO. Để lại lời nhắn hoặc liên hệ trực tiếp qua email / điện thoại.</p>
   </div>
 </section>
 
 <section class="reveal">
-  <div class="container">
-    <div class="contact-layout">
+  <div class="container two-col" style="align-items:start">
+    <div class="info-card">
+      <h3>Gửi lời nhắn</h3>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Họ tên</label>
+          <input type="text" id="name" name="name" required placeholder="Tên của bạn">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="you@company.com">
+        </div>
+        <div class="form-group">
+          <label for="message">Nội dung</label>
+          <textarea id="message" name="message" required placeholder="Bạn muốn trao đổi điều gì?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Gửi lời nhắn</button>
+      </form>
+    </div>
 
-      <!-- Form -->
-      <div class="contact-form-card">
-        <h3>Gửi lời nhắn</h3>
-        <p class="form-lead">Điền thông tin bên dưới — ứng dụng email của bạn sẽ mở sẵn nội dung để gửi.</p>
-
-        <form id="contact-form" novalidate>
-          <span class="field-label">Bạn muốn trao đổi về</span>
-          <div class="topic-pills" role="radiogroup" aria-label="Chủ đề liên hệ">
-            <label class="topic-pill checked">
-              <input type="radio" name="topic" value="Cơ hội full-time" checked>Cơ hội full-time
-            </label>
-            <label class="topic-pill">
-              <input type="radio" name="topic" value="Hợp tác dự án">Hợp tác dự án
-            </label>
-            <label class="topic-pill">
-              <input type="radio" name="topic" value="Khác">Khác
-            </label>
-          </div>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Họ tên</label>
-              <input type="text" id="name" name="name" required placeholder="Tên của bạn" autocomplete="name">
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required placeholder="you@company.com" autocomplete="email">
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="message">Nội dung</label>
-            <textarea id="message" name="message" required maxlength="600" placeholder="Bạn muốn trao đổi điều gì?"></textarea>
-            <div class="field-foot"><span class="char-count" id="char-count">0/600</span></div>
-          </div>
-
-          <button type="submit" class="btn btn-primary btn-block btn-submit" id="submit-btn">
-            <span class="btn-label">Gửi lời nhắn</span>
-            <span class="spinner" aria-hidden="true"></span>
-          </button>
-
-          <p class="form-note">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 16v-5"/><path d="M12 8h.01"/></svg>
-            <span>Đây là site tĩnh, không có backend — nút "Gửi" sẽ mở app email mặc định với nội dung điền sẵn. Nếu bạn không dùng app email trên máy này, dùng nút sao chép email/SĐT bên phải.</span>
-          </p>
-        </form>
+    <div style="display:grid;gap:16px">
+      <div class="contact-card">
+        <h3>📧 Email</h3>
+        <a href="mailto:quanghieumkt@gmail.com">quanghieumkt@gmail.com</a>
       </div>
-
-      <!-- Sidebar -->
-      <div class="contact-sidebar">
-
-        <div class="status-card">
-          <div class="status-live"><span class="status-dot"></span>Đang mở cho cơ hội mới</div>
-          <div class="status-meta">
-            <div class="row"><span>Phản hồi trung bình</span><strong>&lt; 24 giờ</strong></div>
-            <div class="row"><span>Hình thức</span><strong>Full-time / Freelance</strong></div>
-            <div class="row"><span>Khu vực</span><strong>Tân Phú, TP.HCM</strong></div>
-          </div>
-        </div>
-
-        <div class="channel-card">
-          <div class="channel">
-            <span class="channel-icon" aria-hidden="true">
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-            </span>
-            <span class="channel-body">
-              <span class="channel-label">Email</span>
-              <a class="channel-value" href="mailto:quanghieumkt@gmail.com">quanghieumkt@gmail.com</a>
-            </span>
-            <button type="button" class="channel-action" data-copy="quanghieumkt@gmail.com" aria-label="Sao chép email">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
-            </button>
-          </div>
-          <div class="channel">
-            <span class="channel-icon" aria-hidden="true">
-              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            </span>
-            <span class="channel-body">
-              <span class="channel-label">Điện thoại</span>
-              <a class="channel-value" href="tel:0387911499">0387 911 499</a>
-            </span>
-            <button type="button" class="channel-action" data-copy="0387911499" aria-label="Sao chép số điện thoại">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
-            </button>
-          </div>
-          <a class="channel" href="https://www.linkedin.com/in/quang-hieu-seo/" target="_blank" rel="noopener">
-            <span class="channel-icon" aria-hidden="true">in</span>
-            <span class="channel-body">
-              <span class="channel-label">LinkedIn</span>
-              <span class="channel-value">linkedin.com/in/quang-hieu-seo</span>
-            </span>
-          </a>
-          <a class="channel" href="https://www.facebook.com/quang.hieu.301897" target="_blank" rel="noopener">
-            <span class="channel-icon" aria-hidden="true">f</span>
-            <span class="channel-body">
-              <span class="channel-label">Facebook</span>
-              <span class="channel-value">facebook.com/quang.hieu.301897</span>
-            </span>
-          </a>
-        </div>
-
-        <a class="channel-cv" href="assets/documents/CV_Truong_Quang_Hieu.pdf" target="_blank">
-          <span>
-            <span class="t">Tải CV đầy đủ</span>
-            <span class="s">PDF · Kinh nghiệm, kỹ năng, chứng chỉ</span>
-          </span>
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v13"/><path d="m7 11 5 5 5-5"/><path d="M5 21h14"/></svg>
-        </a>
-
+      <div class="contact-card">
+        <h3>📞 Điện thoại</h3>
+        <a href="tel:0387911499">0387 911 499</a>
+      </div>
+      <div class="contact-card">
+        <h3>💼 LinkedIn</h3>
+        <a href="https://www.linkedin.com/in/quang-hieu-seo/" target="_blank" rel="noopener">linkedin.com/in/quang-hieu-seo</a>
+      </div>
+      <div class="contact-card">
+        <h3>👤 Facebook</h3>
+        <a href="https://www.facebook.com/quang.hieu.301897" target="_blank" rel="noopener">facebook.com/quang.hieu.301897</a>
+      </div>
+      <div class="contact-card">
+        <h3>📍 Khu vực</h3>
+        <span>Tân Phú, TP. Hồ Chí Minh</span>
+      </div>
+      <div class="contact-card">
+        <h3>💼 Đang tìm</h3>
+        <span>Vị trí SEO Specialist / Technical SEO</span>
       </div>
     </div>
   </div>
 </section>
 </main>
-
-<div class="toast" id="toast" role="status" aria-live="polite">
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-  <span id="toast-text"></span>
-</div>
 
 <footer>
   <div class="container footer-inner">
